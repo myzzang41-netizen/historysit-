@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중2 성적 균등 모둠 배치기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>모둠 짝꿍: 성적 균등 배치 프로그램</h1>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>1. 설정 및 학생 입력</h2>
+            <div class="form-group">
+                <label for="group-count">만들 모둠 수:</label>
+                <input type="number" id="group-count" value="4" min="1" max="10">
+            </div>
+            <div class="form-group">
+                <label for="student-data">학생 명단 (이름,점수 - 줄바꿈으로 구분)</label>
+                <textarea id="student-data" rows="6" placeholder="김철수,95&#10;이영희,88&#10;박민수,82&#10;정지원,75"></textarea>
+            </div>
+            <button class="btn" id="generate-btn">모둠 자동으로 짜기</button>
+        </section>
+
+        <section class="result-section">
+            <h2>2. 모둠 배치 결과</h2>
+            <div id="result-container" class="features-grid">
+                <!-- 결과가 여기에 표시됩니다 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 모둠 배치 앱</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
